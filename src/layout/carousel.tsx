@@ -19,17 +19,17 @@ const photographyWords = [
     image: "/placeholder.svg?height=600&width=800",
     description: "Artful arrangement of elements",
   },
-  { word: "Atmosphere", image: "/placeholder.svg?height=600&width=800", description: "Mood and ambiance captured" },
-  { word: "Nostalgia", image: "/placeholder.svg?height=600&width=800", description: "Sentimental journeys" },
-  { word: "Contrast", image: "/placeholder.svg?height=600&width=800", description: "Juxtaposition of elements" },
-  { word: "Candid", image: "/placeholder.svg?height=600&width=800", description: "Unposed authentic expressions" },
+  { word: "Atmosphere", image: "assets/placeholder.svg?height=600&width=800", description: "Mood and ambiance captured" },
+  { word: "Nostalgia", image: "assets/placeholder.svg?height=600&width=800", description: "Sentimental journeys" },
+  { word: "Contrast", image: "assets/placeholder.svg?height=600&width=800", description: "Juxtaposition of elements" },
+  { word: "Candid", image: "assets/placeholder.svg?height=600&width=800", description: "Unposed authentic expressions" },
   {
     word: "Silhouette",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "assets/placeholder.svg?height=600&width=800",
     description: "Dramatic outlines against light",
   },
-  { word: "Texture", image: "/placeholder.svg?height=600&width=800", description: "Tactile visual elements" },
-  { word: "Reflection", image: "/placeholder.svg?height=600&width=800", description: "Mirrored beauty in surfaces" },
+  { word: "Texture", image: "assets/placeholder.svg?height=600&width=800", description: "Tactile visual elements" },
+  { word: "Reflection", image: "assets/placeholder.svg?height=600&width=800", description: "Mirrored beauty in surfaces" },
 ]
 
 export default function Carousel() {

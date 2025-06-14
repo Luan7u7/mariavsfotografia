@@ -58,7 +58,7 @@ export default function Hero() {
             }
           }}
         > 
-          <img src="/logo.png" alt="logo" className=" w-3/4 h-3/4 antialiased" />
+          <img src="assets/logo.png" alt="logo" className=" w-3/4 h-3/4 antialiased" />
           {/* Maria Alice */}
         </motion.h1>
 
