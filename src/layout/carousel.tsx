@@ -7,29 +7,29 @@ import { useState, useRef, useEffect } from "react"
 
 // Photography-related meaningful words
 const photographyWords = [
-  { word: "Momentos", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Capturando emoções fugazes" },
-  { word: "Luz", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Jogando com a iluminação natural" },
-  { word: "Emoção", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Sentimentos brutos preservados para sempre" },
-  { word: "Memórias", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Recolhimentos eternos" },
-  { word: "Histórias", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Narrativas visuais se desenrolam" },
-  { word: "Perspectiva", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Ângulos únicos e pontos de vista" },
-  { word: "Conexão", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Vínculos humanos imortais" },
+  { word: "Momentos", image: "placeholder.svg?height=600&width=800", description: "Capturando emoções fugazes" },
+  { word: "Luz", image: "placeholder.svg?height=600&width=800", description: "Jogando com a iluminação natural" },
+  { word: "Emoção", image: "placeholder.svg?height=600&width=800", description: "Sentimentos brutos preservados para sempre" },
+  { word: "Memórias", image: "placeholder.svg?height=600&width=800", description: "Recolhimentos eternos" },
+  { word: "Histórias", image: "placeholder.svg?height=600&width=800", description: "Narrativas visuais se desenrolam" },
+  { word: "Perspectiva", image: "placeholder.svg?height=600&width=800", description: "Ângulos únicos e pontos de vista" },
+  { word: "Conexão", image: "placeholder.svg?height=600&width=800", description: "Vínculos humanos imortais" },
   {
     word: "Composição",
-    image: "mariavsfotografia/placeholder.svg?height=600&width=800",
+    image: "placeholder.svg?height=600&width=800",
     description: "Arranjo artístico de elementos",
   },
-  { word: "Atmosfera", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Ambiente e atmosfera capturados" },
-  { word: "Nostalgia", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Viagens sentimentais" },
-  { word: "Contraste", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Juxtaposição de elementos" },
-  { word: "Candidato", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Expressões autênticas não-posadas" },
+  { word: "Atmosfera", image: "placeholder.svg?height=600&width=800", description: "Ambiente e atmosfera capturados" },
+  { word: "Nostalgia", image: "placeholder.svg?height=600&width=800", description: "Viagens sentimentais" },
+  { word: "Contraste", image: "placeholder.svg?height=600&width=800", description: "Juxtaposição de elementos" },
+  { word: "Candidato", image: "placeholder.svg?height=600&width=800", description: "Expressões autênticas não-posadas" },
   {
     word: "Silhueta",
-    image: "mariavsfotografia/placeholder.svg?height=600&width=800",
+    image: "placeholder.svg?height=600&width=800",
     description: "Contornos dramáticos contra a luz",
   },
-  { word: "Textura", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Elementos visuais táteis" },
-  { word: "Reflexão", image: "mariavsfotografia/placeholder.svg?height=600&width=800", description: "Beleza refletida em superfícies" },
+  { word: "Textura", image: "placeholder.svg?height=600&width=800", description: "Elementos visuais táteis" },
+  { word: "Reflexão", image: "placeholder.svg?height=600&width=800", description: "Beleza refletida em superfícies" },
 ]
 
 export default function Carousel() {
