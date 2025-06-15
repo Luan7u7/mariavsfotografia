@@ -4,14 +4,14 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 
 const portfolioImages = [
-  { src: "/placeholder.svg?height=400&width=300", title: "Casamento", category: "Wedding" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Retratos", category: "Street" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Eventos", category: "Portrait" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Paisagens", category: "Landscape" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Momentos Intimos", category: "Wedding" },
-  { src: "/placeholder.svg?height=400&width=300", title: "City Lights", category: "Street" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Timeless Grace", category: "Portrait" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Serenidade", category: "Landscape" },
+  { src: "mariavsfotografia/placeholder.svg?height=400&width=300", title: "Casamento", category: "Wedding" },
+  { src: "mariavsfotografia/placeholder.svg?height=400&width=300", title: "Retratos", category: "Street" },
+  { src: "mariavsfotografia/placeholder.svg?height=400&width=300", title: "Eventos", category: "Portrait" },
+  { src: "mariavsfotografia/placeholder.svg?height=400&width=300", title: "Paisagens", category: "Landscape" },
+  { src: "mariavsfotografia/placeholder.svg?height=400&width=300", title: "Momentos Intimos", category: "Wedding" },
+  { src: "mariavsfotografia/placeholder.svg?height=400&width=300", title: "City Lights", category: "Street" },
+  { src: "mariavsfotografia/placeholder.svg?height=400&width=300", title: "Timeless Grace", category: "Portrait" },
+  { src: "mariavsfotografia/placeholder.svg?height=400&width=300", title: "Serenidade", category: "Landscape" },
 ]
 
 export default function Portfolio() {
