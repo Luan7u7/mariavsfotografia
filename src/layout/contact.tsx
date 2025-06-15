@@ -35,9 +35,9 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight">Let's Create Together</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight">Vamos Criar Juntos</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Ready to capture your story? Get in touch to discuss your photography needs
+            Pronto para capturar o seu momento? Entre em contato para discutir suas necessidades de fotografia
           </p>
         </motion.div>
 
@@ -48,7 +48,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-light mb-8">Get In Touch</h3>
+            <h3 className="text-2xl font-light mb-8">Entre em Contato</h3>
             <div className="space-y-6">
               {contactInfo.map((item, index) => (
                 <motion.a
@@ -67,7 +67,7 @@ export default function Contact() {
             </div>
 
             <div className="mt-12">
-              <h4 className="text-xl font-light mb-6">Follow My Work</h4>
+              <h4 className="text-xl font-light mb-6">Acompanhe o meu trabalho</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -93,11 +93,11 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-light mb-6">Send a Message</h3>
+            <h3 className="text-2xl font-light mb-6">Envie uma Mensagem</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <motion.div whileFocus={{ scale: 1.02 }}>
-                  <label className="block text-sm text-gray-300 mb-2">First Name</label>
+                  <label className="block text-sm text-gray-300 mb-2">Nome</label>
                   <input
                     type="text"
                     className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-gray-400 transition-colors"
@@ -105,7 +105,7 @@ export default function Contact() {
                   />
                 </motion.div>
                 <motion.div whileFocus={{ scale: 1.02 }}>
-                  <label className="block text-sm text-gray-300 mb-2">Last Name</label>
+                  <label className="block text-sm text-gray-300 mb-2">Sobrenome</label>
                   <input
                     type="text"
                     className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-gray-400 transition-colors"
@@ -124,11 +124,11 @@ export default function Contact() {
               </motion.div>
 
               <motion.div whileFocus={{ scale: 1.02 }}>
-                <label className="block text-sm text-gray-300 mb-2">Message</label>
+                <label className="block text-sm text-gray-300 mb-2">Mensagem</label>
                 <textarea
                   rows={4}
                   className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-gray-400 transition-colors resize-none"
-                  placeholder="Tell me about your photography needs..."
+                  placeholder="Digite sua mensagem aqui..."
                 ></textarea>
               </motion.div>
 
@@ -137,9 +137,7 @@ export default function Contact() {
                 className="w-full bg-white text-gray-900 py-3 px-6 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-300"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-              >
-                Send Message
-              </motion.button>
+              >enviar mensagem</motion.button>
             </form>
           </motion.div>
         </div>
@@ -151,8 +149,8 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-400">© 2024 Maria Alice Photography. All rights reserved.</p>
-          <p className="text-gray-400">create by Luan Veiga</p>
+          <p className="text-gray-400">© 2024 Maria Alice Fotografia. Todos os direitos reservados.</p>
+          <p className="text-gray-400">criado por Luan Veiga</p>
 
         </motion.div>
       </motion.div>

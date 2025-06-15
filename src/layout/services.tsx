@@ -7,31 +7,31 @@ import { Download, Camera, Heart, Users } from "lucide-react"
 const services = [
   {
     icon: Heart,
-    title: "Wedding Photography",
-    description: "Capturing your special day with artistic vision and emotional depth",
-    price: "Starting at $2,500",
-    features: ["8-hour coverage", "Engagement session", "500+ edited photos", "Online gallery"],
+    title: "Fotografia de Casamento",
+    description: "Capturando o seu dia especial com visão artística e profundidade emocional",
+    price: "A partir de R$2,500",
+    features: ["8 horas de cobertura", "Sessão de noivado", "500+ fotos editadas", "Galeria online"],
   },
   {
     icon: Users,
-    title: "Portrait Sessions",
-    description: "Professional portraits that reveal your authentic self",
-    price: "Starting at $350",
-    features: ["1-hour session", "25+ edited photos", "Wardrobe consultation", "Print release"],
+    title: "Sessão de Retrato",
+    description: "Fotografias profissionais que revelam sua autenticidade",
+    price: "A partir de R$350",
+    features: ["1 hora de sessão", "25+ fotos editadas", "Consultoria de vestimenta", "Liberação de impressão"],
   },
   {
     icon: Camera,
-    title: "Event Photography",
-    description: "Documenting your corporate events and special occasions",
-    price: "Starting at $800",
-    features: ["4-hour coverage", "200+ edited photos", "Same-day preview", "Commercial license"],
+    title: "Fotografia de Eventos",
+    description: "Documentando seus eventos corporativos e ocasiões especiais",
+    price: "A partir de R$800",
+    features: ["4 horas de cobertura", "200+ fotos editadas", "Preview do mesmo dia", "Licença comercial"],
   },
 ]
 
 const contracts = [
-  { name: "Wedding Photography Contract", type: "PDF" },
-  { name: "Portrait Session Agreement", type: "PDF" },
-  { name: "Event Photography Terms", type: "PDF" },
+  { name: "Contrato de Fotografia de Casamento", type: "PDF" },
+  { name: "Contrato de Sessão de Retrato", type: "PDF" },
+  { name: "Contrato de Fotografia de Eventos", type: "PDF" },
 ]
 
 export default function Services() {
@@ -53,17 +53,15 @@ export default function Services() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 tracking-tight">Services & Packages</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Tailored photography services to meet your unique needs
-          </p>
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 tracking-tight">Serviços e Pacotes</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">Tudo que você precisa para capturar os momentos mais importantes da sua vida</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
+              className="bg-zinc-100 rounded-lg p-8 hover:shadow-lg  duration-100"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -71,12 +69,12 @@ export default function Services() {
               whileHover={{ y: -5 }}
             >
               <service.icon className="w-12 h-12 text-gray-700 mb-6" />
-              <h3 className="text-2xl font-light text-gray-900 mb-4">{service.title}</h3>
+              <h3 className="text-2xl font-light  text-gray-900 mb-4">{service.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
               <div className="text-2xl font-light text-gray-900 mb-6">{service.price}</div>
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="text-gray-600 flex items-center">
+                  <li key={featureIndex} className="text-gray-600  flex items-center">
                     <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
                     {feature}
                   </li>
@@ -87,15 +85,15 @@ export default function Services() {
         </div>
 
         <motion.div
-          className="bg-gray-50 rounded-lg p-8"
+          className="bg-zinc-100 rounded-lg p-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-light text-gray-900 mb-6 text-center">Contract Templates</h3>
+          <h3 className="text-2xl font-light text-gray-900 mb-6 text-center">Contratos</h3>
           <p className="text-gray-600 text-center mb-8 leading-relaxed">
-            Download our standard contract templates to review terms and conditions
+            Baixe os nossos contratos padrão para revisar os termos e condições
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

@@ -4,14 +4,14 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 
 const portfolioImages = [
-  { src: "/placeholder.svg?height=400&width=300", title: "Wedding Bliss", category: "Wedding" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Urban Stories", category: "Street" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Natural Beauty", category: "Portrait" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Golden Hour", category: "Landscape" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Intimate Moments", category: "Wedding" },
+  { src: "/placeholder.svg?height=400&width=300", title: "Casamento", category: "Wedding" },
+  { src: "/placeholder.svg?height=400&width=300", title: "Retratos", category: "Street" },
+  { src: "/placeholder.svg?height=400&width=300", title: "Eventos", category: "Portrait" },
+  { src: "/placeholder.svg?height=400&width=300", title: "Paisagens", category: "Landscape" },
+  { src: "/placeholder.svg?height=400&width=300", title: "Momentos Intimos", category: "Wedding" },
   { src: "/placeholder.svg?height=400&width=300", title: "City Lights", category: "Street" },
   { src: "/placeholder.svg?height=400&width=300", title: "Timeless Grace", category: "Portrait" },
-  { src: "/placeholder.svg?height=400&width=300", title: "Serenity", category: "Landscape" },
+  { src: "/placeholder.svg?height=400&width=300", title: "Serenidade", category: "Landscape" },
 ]
 
 export default function Portfolio() {
@@ -33,9 +33,9 @@ export default function Portfolio() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 tracking-tight">Portfolio</h2>
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 tracking-tight">Portfólio</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            A curated collection of moments that tell stories beyond words
+            Uma coleção de momentos que contam histórias além das palavras
           </p>
         </motion.div>
 
@@ -59,9 +59,9 @@ export default function Portfolio() {
               </div>
 
               <motion.div
-                className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
                 initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
+                whileHover={{ opacity: 0.4 }}
               >
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-lg font-medium mb-1">{image.title}</h3>

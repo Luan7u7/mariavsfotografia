@@ -7,29 +7,29 @@ import { useState, useRef, useEffect } from "react"
 
 // Photography-related meaningful words
 const photographyWords = [
-  { word: "Moments", image: "/placeholder.svg?height=600&width=800", description: "Capturing fleeting emotions" },
-  { word: "Light", image: "/placeholder.svg?height=600&width=800", description: "Playing with natural illumination" },
-  { word: "Emotion", image: "/placeholder.svg?height=600&width=800", description: "Raw feelings preserved forever" },
-  { word: "Memories", image: "/placeholder.svg?height=600&width=800", description: "Timeless recollections" },
-  { word: "Stories", image: "/placeholder.svg?height=600&width=800", description: "Visual narratives unfolding" },
-  { word: "Perspective", image: "/placeholder.svg?height=600&width=800", description: "Unique angles and viewpoints" },
-  { word: "Connection", image: "/placeholder.svg?height=600&width=800", description: "Human bonds immortalized" },
+  { word: "Momentos", image: "/placeholder.svg?height=600&width=800", description: "Capturando emoções fugazes" },
+  { word: "Luz", image: "/placeholder.svg?height=600&width=800", description: "Jogando com a iluminação natural" },
+  { word: "Emoção", image: "/placeholder.svg?height=600&width=800", description: "Sentimentos brutos preservados para sempre" },
+  { word: "Memórias", image: "/placeholder.svg?height=600&width=800", description: "Recolhimentos eternos" },
+  { word: "Histórias", image: "/placeholder.svg?height=600&width=800", description: "Narrativas visuais se desenrolam" },
+  { word: "Perspectiva", image: "/placeholder.svg?height=600&width=800", description: "Ângulos únicos e pontos de vista" },
+  { word: "Conexão", image: "/placeholder.svg?height=600&width=800", description: "Vínculos humanos imortais" },
   {
-    word: "Composition",
+    word: "Composição",
     image: "/placeholder.svg?height=600&width=800",
-    description: "Artful arrangement of elements",
+    description: "Arranjo artístico de elementos",
   },
-  { word: "Atmosphere", image: "assets/placeholder.svg?height=600&width=800", description: "Mood and ambiance captured" },
-  { word: "Nostalgia", image: "assets/placeholder.svg?height=600&width=800", description: "Sentimental journeys" },
-  { word: "Contrast", image: "assets/placeholder.svg?height=600&width=800", description: "Juxtaposition of elements" },
-  { word: "Candid", image: "assets/placeholder.svg?height=600&width=800", description: "Unposed authentic expressions" },
+  { word: "Atmosfera", image: "/placeholder.svg?height=600&width=800", description: "Ambiente e atmosfera capturados" },
+  { word: "Nostalgia", image: "/placeholder.svg?height=600&width=800", description: "Viagens sentimentais" },
+  { word: "Contraste", image: "/placeholder.svg?height=600&width=800", description: "Juxtaposição de elementos" },
+  { word: "Candidato", image: "/placeholder.svg?height=600&width=800", description: "Expressões autênticas não-posadas" },
   {
-    word: "Silhouette",
-    image: "assets/placeholder.svg?height=600&width=800",
-    description: "Dramatic outlines against light",
+    word: "Silhueta",
+    image: "/placeholder.svg?height=600&width=800",
+    description: "Contornos dramáticos contra a luz",
   },
-  { word: "Texture", image: "assets/placeholder.svg?height=600&width=800", description: "Tactile visual elements" },
-  { word: "Reflection", image: "assets/placeholder.svg?height=600&width=800", description: "Mirrored beauty in surfaces" },
+  { word: "Textura", image: "/placeholder.svg?height=600&width=800", description: "Elementos visuais táteis" },
+  { word: "Reflexão", image: "/placeholder.svg?height=600&width=800", description: "Beleza refletida em superfícies" },
 ]
 
 export default function Carousel() {
@@ -84,22 +84,31 @@ export default function Carousel() {
 
   const getWordSize = (index: number) => {
     // Create varying sizes for visual interest
-    const sizes = ["text-xl", "text-2xl", "text-3xl", "text-4xl", "text-5xl"]
+    const sizes = [
+      "text-xl",
+      "text-2xl",
+      "text-3xl",
+      "text-4xl",
+      "text-5xl",
+      "text-6xl",
+      
+    ]
     return sizes[index % sizes.length]
   }
+  
 
   const getWordPosition = (index: number) => {
     // Create a more organic, scattered layout
     const positions = [
-      "justify-start",
-      "justify-center",
-      "justify-end",
-      "justify-start ml-12",
-      "justify-center mr-16",
-      "justify-end ml-20",
-      "justify-start mr-8",
-      "justify-center ml-24",
-      "justify-end mr-12",
+      "justify-start ml-6",
+    "justify-center mr-10",
+    "justify-end ml-14",
+    "justify-start mr-16",
+    "justify-center ml-20",
+    "justify-end mr-24",
+    "justify-start ml-12",
+    "justify-center mr-24",
+    "justify-end ml-28",
     ]
     return positions[index % positions.length]
   }
@@ -159,17 +168,17 @@ export default function Carousel() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Featured Work
+          Momentos
         </motion.h2>
 
         <motion.div
-          className="relative min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center"
+          className="relative min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, staggerChildren: 0.1 }}
           viewport={{ once: true }}
         >
-          <div className="w-full max-w-4xl mx-auto flex flex-wrap justify-center items-center gap-x-6 gap-y-10 py-12">
+          <div className="w-full max-w-6xl mx-auto flex flex-wrap justify-center items-center gap-x-24 gap-y-12 py-16">
             {photographyWords.map((item, index) => (
               <motion.div
                 key={index}
@@ -180,7 +189,7 @@ export default function Carousel() {
                 viewport={{ once: true }}
               >
                 <motion.span
-                  className={`${getWordSize(index)} text-gray-800 font-light tracking-wide cursor-pointer relative hover:text-gray-900 transition-colors duration-300`}
+                  className={`${getWordSize(index)} text-gray-800 font-light tracking-widest cursor-pointer relative hover:text-gray-900 transition-colors duration-300`}
                   onMouseEnter={(e) => handleMouseEnter(item.word, e)}
                   onMouseLeave={() => setHoveredWord(null)}
                   whileHover={{ scale: 1.05 }}
@@ -258,8 +267,8 @@ export default function Carousel() {
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-600 italic">"Photography is the story I fail to put into words"</p>
-          <p className="text-gray-500 text-sm mt-2">— Destin Sparks</p>
+          <p className="text-gray-600 italic">- Uma frase foda de algum fotografo foda</p>
+          <p className="text-gray-500 text-sm mt-2">- Maria Alice</p>
         </motion.div>
       </motion.div>
     </motion.section>

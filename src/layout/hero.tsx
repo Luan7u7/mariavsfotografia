@@ -58,7 +58,7 @@ export default function Hero() {
             }
           }}
         > 
-          <img src="assets/logo.png" alt="logo" className=" w-3/4 h-3/4 antialiased" />
+          <img src="/logo.png" width={800} height={100} alt="logo" className="  h-3/4 antialiased" />
           {/* Maria Alice */}
         </motion.h1>
 
@@ -83,7 +83,7 @@ export default function Hero() {
               transition: { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }
             }
           }}>
-          Capturing life's most precious moments through the lens of artistry and emotion
+          Capturando os momentos mais preciosos da sua vida. 
         </motion.p>
 
         <motion.button
@@ -100,7 +100,7 @@ export default function Hero() {
           whileHover={{ y: -2 }}
           whileTap={{ y: 0 }}
         >
-          <span className="mr-2 text-sm tracking-wider uppercase">Explore Work</span>
+          <span className="mr-2 text-sm tracking-wider uppercase">Conheça meu trabalho</span>
           <ChevronDown className="w-4 h-4 animate-bounce" />
         </motion.button>
       </motion.div>
