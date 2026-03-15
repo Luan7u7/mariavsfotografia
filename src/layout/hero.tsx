@@ -111,7 +111,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
       >
-        <div className="w-px h-16 bg-gradient-to-b from-gray-400 to-transparent"></div>
+        <div className="w-px h-16 bg-linear-to-b from-gray-400 to-transparent"></div>
       </motion.div>
     </section>
   )
